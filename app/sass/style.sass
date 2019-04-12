@@ -1,0 +1,1519 @@
+@import "_vars"
+@import "_fonts"
+
+body
+	font-family: $georgR
+	font-size: 14px
+a 
+	text-decoration: none 
+a:hover 
+	text-decoration: none
+ul 
+	padding-left: 0
+li 
+	list-style: none
+.main-section
+
+.header 
+
+
+.top-header
+	background: #000
+	height: 80px
+	.container
+		display: flex	
+		justify-content: space-between
+		padding-top: 29px
+.top-header__link
+	color: #fff
+	text-transform: uppercase
+	font-family: $mont
+	font-weight: 500
+	font-size: 12px
+	cursor: pointer
+
+
+	
+.top-header__item:nth-child(1) .top-header__link:before
+	font-family: $icon
+	content: "\f102"
+.top-header__item:nth-child(2) .top-header__link:before
+	font-family: $icon
+	content: "\f103"
+.top-header__item:nth-child(3) .top-header__link:before
+	font-family: $icon
+	content: "\f104"
+.top-header__item:nth-child(4) .top-header__link:after
+	font-family: $icon
+	content: "\f105"
+.top-header__item:nth-child(5) .top-header__link:before
+	
+	content: url(../img/ru.png)
+.top-header__item:nth-child(4) .top-header__link
+	font-family: $georgR
+.top-header__link:before
+	padding-right: 7px
+.top-header__link:hover 
+	color: #fff
+.top-header__item:nth-child(5)
+	display: flex
+	flex-direction: column
+	position: relative
+	top: 7px
+
+	.en
+		position: absolute
+		top: 20px
+		opacity: 0
+
+	.en:before 
+		content: url(../img/en.png)
+		padding-right: 10px
+.top-header__item:nth-child(5):hover .en
+	opacity: 1
+.top-header__item:nth-child(4) 
+	position: relative
+.callback-popup-box.active
+	display: block
+	top: 0
+	position: fixed 
+	width: 100% 
+	height: 100%
+	background-color: rgba( 39, 112, 88, 0.15)
+.callback-popup-box 
+	position: absolute
+	top: 60px
+	z-index: 998
+	display: none
+.callback-popup 
+	height: 438px 
+	width: 730px 
+	background: #fff
+	top: 175px
+	position: absolute
+	left: 50%
+	transform: translate(-50%)
+	padding: 65px
+.close-callback-box
+	position: absolute
+	right: 15px
+	top: 15px
+	cursor: pointer
+	border: 1px solid #000
+	height: 30px
+	width: 30px
+	border-radius: 50%
+.close-callback-box__span 
+	height: 1px 
+	width: 20px
+	display: block
+	color: #000
+	background: #000
+	position: absolute
+	top: 14px
+	left: 4px
+.close-callback-box__span:last-child
+		// margin-top: -2px
+		transform: rotate(45deg)
+.close-callback-box__span:first-child
+		transform: rotate(-45deg)
+.callback_popup_box__title
+	font-size: 30px
+	font-family: $georgB
+	font-weight: bold
+	text-transform: uppercase
+.callback_popup_box__subtitle
+	color: $grey
+	text-transform: uppercase
+	font-family: $georgB
+	font-weight: bold
+	font-size: 14px
+	margin-bottom: 20px
+.callback-form .wrapper 
+	width: 100%
+	display: flex
+	justify-content: space-between
+
+.callback-form__input
+	width: 100%
+	margin: 20px 0
+	border: none
+	border-bottom: 1px solid $grey
+	outline: none
+.callback-form__input::-webkit-input-placeholder
+	color: #000
+.callback-form__input::-moz-placeholder
+	color: #000
+.callback-form__input-placeholder
+.callback-form .wrapper .callback-form__input
+	width: 48%
+.callback-form__btn 
+	width: 100%
+	height: 100%
+	background: #000
+	color: #fff
+	border: none
+	text-transform: uppercase
+	padding-right: 30px
+	cursor: pointer
+.btn-wrapper:after
+	font-family: $icon
+	content: "\f105"
+	color: #fff
+	position: absolute
+	right: 15px
+	top: 17px
+	font-size: 12px
+.btn-wrapper 
+	height: 50px
+	width: 195px
+	position: relative
+	margin-top: 30px
+	cursor: pointer
+.logo 
+	display: flex
+	justify-content: center
+	padding: 25px 0
+	border-bottom: 1px solid $grey
+
+
+
+		
+
+.menu	
+.menu ul 
+	display: flex
+	justify-content: space-between
+	text-transform: uppercase
+	margin-bottom: 0
+	
+	li 
+		height: 75px
+		display: flex
+		align-items: center
+		position: relative
+		ul 
+			display: none
+			position: absolute
+			top: 75px
+			left: -25px
+			//min-width: 300px			
+			background: #fff
+			padding:  0 15px
+			border-top: 2px solid #000
+			z-index: 999
+			li
+				border-bottom: 1px solid $grey 
+				padding: 0 5px
+				a 
+					text-transform: none
+					white-space: nowrap
+			li:last-child 
+				border-bottom: none
+		a 
+			color: $grey
+			font-family: $georgR
+			font-weight: 500
+		a:hover 
+			color: #000
+		a.active
+			color: #000
+.menu-item-sub-fild:after 
+	font-family: $icon
+	content: "\f105"
+	transform: rotate(90deg) !important
+	color: $grey
+	font-size: 12px
+	padding-left: 15px
+	margin-top: -6px
+	position: absolute
+	
+
+.slider_box .slider .items_slider
+	
+	position: relative
+	padding-bottom: 32px
+	img 
+		width: 100%
+		position: absolute
+		top: 0
+		left: 0
+		//height: 100%
+
+
+
+	h2 
+		font-size: 24px
+	.title 
+		font-size: 36px
+		font-family: $georgB
+		font-weight: bold 
+		color: #fff
+		line-height: 40px
+	p 
+		color: #fff
+		font-size: 12px
+		padding-top: 20px
+.items_slider__text-block 
+	position: relative
+	max-width: 500px
+	text-align: center
+	padding: 30px 0
+	padding-top: 90px
+.btn-see-more
+	height: 50px
+	width: 195px
+	position: relative
+	margin-top: 20px
+	cursor: pointer	
+	background: #000
+	border: none
+	margin-bottom: 30px
+
+	a
+		color: #fff
+		text-transform: uppercase
+		padding-right: 30px
+		cursor: pointer
+		outline: none
+.btn-see-more,
+.btn-see-more:active,
+.btn-see-more:focus
+	outline: none
+.btn-see-more:after
+	font-family: $icon
+	content: "\f105"
+	color: #fff
+	position: absolute
+	right: 15px
+	top: 17px
+	font-size: 12px
+.slick-dots 
+	display: flex
+	justify-content: center
+	bottom: 20px
+	left: 50%
+	transform: translate(-50%)
+	position: absolute
+	li 
+		border-radius: 50%
+		background: transparent
+		border: 1px solid #000
+		height: 12px
+		width: 12px
+		margin: 5px
+		button
+			background: transparent
+			font-size: 0
+			border: none
+			outline: none
+	li.slick-active 
+		background: #000
+.btn_menu 
+	position: absolute
+	top: 25px
+	right: 15%
+	background: transparent
+	border: none
+	cursor: pointer
+	outline: none
+	display: none
+	span 
+		height: 4px 
+		width: 32px 
+		background: #000
+		display: block
+		margin-bottom: 5px
+.btn_menu, 
+.btn_menu:active, 
+.btn_menu:focus
+	outline: none
+
+.close-callback-box-menu 
+	// top: 1px
+
+.mobil-contacts
+	display: none
+.home-catalog
+	padding-top: 100px
+	.col-md-7 
+		position: relative
+
+		img
+			width: 100%
+
+			
+	.col-md-5 
+		position: relative
+		img
+			width: 100%
+.home-catalog__text
+	position: absolute
+	top: 30px
+	left: 30px
+	font-size: 24px
+	line-height: 24px
+	text-transform: uppercase
+	.wrapper
+		color: #000
+.home-catalog__link
+	color: $grey
+	display: block
+	font-size: 12px
+	padding-top: 10px
+	text-transform: uppercase
+.home-catalog__link:after
+	font-family: $icon
+	content: "\f105"
+	font-size: 9px
+	padding-left: 9px
+.home-catalog__link:hover 
+	color: #000
+
+.home-catalog 
+	.col-md-7,
+	.col-md-5 
+		margin-bottom: 30px
+.video
+	
+	
+
+
+	.container
+		position: relative
+
+		.bg 
+			width: 100%
+		.play 
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		.play:before
+			font-family: $icon
+			content: "\f106"
+			font-size: 90px
+			color: #fff
+.white-popup-block
+	display: flex
+	justify-content: center
+	iframe 
+		width: 95%
+		height: 590px
+.video-text
+	font-size: 24px
+	padding: 15px 0
+.our-friuts
+	text-align: center
+	padding-top: 98px
+	padding-bottom: 98px
+	.home-catalog__link:last-child
+		display: none
+	.row
+		margin-top: 70px
+	.col-lg-3,
+	.col-lg-4,
+
+		// height: 455px
+		text-transform: uppercase
+		position: relative
+		margin-bottom: 30px
+		.img 
+			width: 100%
+			position: relative
+			img 
+				width: 100%
+				height: 100%
+.our-friuts_title
+	font-size: 30px
+	font-family: $georgB
+	font-weight: bold
+
+.title-fruit
+	padding-top: 23px
+.country 
+	font-size: 12px
+	color: $grey
+.our-friuts__tools-description
+	
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	box-shadow: -7px 7px 35px rgba(153, 153, 153, 0.35)
+	opacity: 0
+	transition: all 0.5s
+	
+	
+
+.btn-box
+	height: 70%
+	background-color: rgba( 156, 211, 208, 0.7)
+	display: flex
+	align-items: center
+
+.wrapper-btn
+	width: 173px
+	height: 40px
+	margin: 0 auto
+	border: 1px solid #000
+	display: flex
+	justify-content: center
+	align-items: center
+	a 
+		color: #000
+		font-weight: bold
+.hover-text
+	background: #fff
+	padding-bottom: 25px
+	height: 30%
+	display: flex
+	justify-content: center
+	flex-direction: column
+
+	.wrap 
+		text-transform: none
+	.wrap-title
+		padding-top: 5px
+.our-friuts .col-lg-3:hover .our-friuts__tools-description,
+.our-friuts .col-lg-4:hover .our-friuts__tools-description
+	opacity: 1
+.exclusive
+	position: absolute
+	background: $blou
+	padding: 10px 15px
+	top: 10px
+	left: 10px
+.about
+	position: relative
+	
+	img 
+		position: absolute
+		right: 0
+		width: 50%
+	.container
+		position: relative
+		
+		.about-text 
+			text-transform: uppercase
+			padding: 200px 0
+
+			.title 
+				font-size: 18px
+				font-family: $georgB
+				font-weight: bold
+			.text 
+				font-size: 30px
+				line-height: 32px
+				padding-top: 30px
+
+.exclusive-section
+	padding-top: 100px
+	img 
+		width: 100%
+	.title
+		font-size: 36px
+		line-height: 38px
+		padding-bottom: 40px
+	p 
+		font-size: 18px
+		color: $grey
+		width: 90%
+	.btn-see-more
+		margin-top: 30px
+.exclusive-section .btn-see-more:nth-child(2)
+	display: none
+
+.instagram 
+	text-align: center
+	padding-top: 100px
+	.title 
+		font-family: $georgB
+		font-weight: bold
+		font-size: 30px
+		text-transform: uppercase
+	.slider-box-instagram 
+		padding: 70px 0
+	.col-md-3 
+		
+		img 
+			width: 100%
+.slider-box-instagram
+	position: relative
+	.instagram-link
+		position: absolute
+		top: 50%
+		z-index: 9999
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: #fff
+		font-size: 30px
+		font-family: $mont
+		margin-top: -1%
+.sub 
+	margin-top: 90px
+	.row 
+		padding-bottom: 100px 
+		border-bottom: 1px solid $grey
+		margin-bottom: 100px
+
+		.col-lg-7
+			text-transform: uppercase
+			display: flex 
+			align-items: center
+		form 
+			display: flex
+			width: 100%
+			input 
+				height: 63px
+			input[type="text"]
+				width: 65%
+				padding: 20px
+				border: 1px solid #000
+				outline: none
+			input[type="text"]::-webkit-input-placeholder
+				color: $grey
+			input[type="text"]::-moz-placeholder
+				color: $grey
+
+			
+			input[type="submit"]
+				width: 35%
+				background: #000
+				border: 1px solid #000
+				color: #fff
+				cursor: pointer
+.footer 
+	padding-bottom: 100px
+	.col-lg-4 
+		display: flex
+		justify-content: flex-end
+		
+	p 
+		text-transform: uppercase
+		margin-right: 50px
+
+	.facebook:before 
+		font-family: $icon
+		content: "\f107"
+		color: $grey
+		margin-right: 25px
+	.facebook:hover:before 
+		color: #000
+	.instagram:hover:before 
+		color: #000
+
+	.instagram:before 
+		font-family: $icon
+		content: "\f100"
+		color: $grey
+		
+
+
+.footer-menu 
+	display: flex
+	justify-content: space-between
+	a 
+		color: $grey
+		text-transform: uppercase
+	
+	a.active 
+		color: #000
+	a:hover 
+		color: #000
+
+.bread-crumbs
+	background: linear-gradient(to right, #9dcab4, #d9e7e7)
+	padding: 45px 0
+	display: flex
+	justify-content: center
+	align-items: center
+	//margin-bottom: 80px
+	a 
+		color: #fff
+	a:after 
+		content: ">"
+		padding: 0px 10px
+	a:last-child:after 
+		display: none
+		
+.our-friuts.category 
+	padding-top: 0		
+
+
+.accordion-item 		
+	color: #000
+	cursor: pointer 
+	padding: 25px 10px
+	cursor: pointer
+	border-bottom: 1px solid $grey
+	font-size: 14px 
+	text-transform: uppercase
+	font-family: $mont
+	font-weight: 500
+	text-align: left
+
+
+.accordion-item.open
+	box-shadow: none
+	margin-bottom: 0
+
+
+	
+
+.accordion-item.open .type 
+	float: right
+
+	
+	
+	
+.accordion-item .type 
+	float: right
+	position: relative
+.accordion-item .type:after
+	font-family: $icon
+	content: "\f105"
+	transform: rotate(90deg)
+	position: absolute
+	font-size: 10px
+	right: 0px
+.accordion-item.open .type:after
+	font-family: $icon
+	content: "\f105"
+	transform: rotate(-90deg)
+	position: absolute		
+	
+.data-input	
+	position: relative
+	margin-bottom: 10px
+	span
+		position: absolute 
+		margin-top: 5px
+		left: 30px
+div.data 		
+	padding: 20px
+	text-align: left		
+	display: none	
+	border-bottom: 1px solid $grey
+	font-family: $mont 
+	font-weight: 500
+	input 
+		height: 15px 
+		width: 15px
+
+.category
+	.col-md-9 
+		border-bottom: 1px solid $grey
+		padding-bottom: 50px
+		margin-bottom: 25px
+		.row 
+			margin-top: 0px
+.category-title 
+	font-size: 16px
+	text-transform: uppercase
+	padding: 25px 20px 
+	border-top: 1px solid #000
+	border-bottom: 1px solid #000
+	text-align: left
+.data-title
+	padding-top: 30px
+	padding-bottom: 5px
+.data-title:first-child
+	padding-top: 0
+
+.checkbox
+	position: absolute
+	z-index: -1
+	opacity: 0
+.checkbox + label
+	position: relative
+	cursor: pointer
+.checkbox + label:before 
+	content: ''
+	position: absolute
+	width: 16px
+	height: 16px
+	background: #fff
+	border: 1px solid #000
+.checkbox + label:after 
+	content: ''
+	position: absolute
+	width: 10px
+	height: 10px
+	background: #000
+	display: none
+.checkbox:checked + label:after 
+	display: block
+	top: 3px 
+	left: 3px
+.accordion 
+	display: flex
+	flex-direction: column
+.filter-title
+	text-align: left
+	height: 75px
+	.title
+		font-size: 13px
+		font-family: $mont 
+		font-weight: 500
+		text-transform: uppercase
+	.active-filter
+		font-size: 9px
+		text-transform: uppercase
+		background: #000
+		color: #fff
+		padding: 10px 15px
+		font-family: $mont 
+		font-weight: 500
+		margin-left: 17px
+		.close-filter 
+			margin-left: 13px
+			cursor: pointer
+.pages 
+	border-bottom: none !important
+	.pagi-page
+		display: flex
+		flex-direction: row
+		justify-content: center
+
+	a 
+		font-size: 16px
+		font-family: $mont
+		display: flex
+		height: 37px
+		justify-content: center
+		align-items: center
+		margin: 0 10px
+		color: #000
+	a.active 
+		
+		width: 37px
+		background: #000
+
+		
+		color: #fff
+.hidden
+	display: none !important		
+
+.category .btn-see-more.clean 
+	margin-top: 30px
+	display: none
+	a 
+		color: #fff
+
+.slick-slide img 
+	width: 100%
+.bread-crumbs
+	display: flex
+	flex-wrap: wrap
+.page-wrapper
+	.col-lg-4
+		.img 
+			background: #f4f6f7
+			width: 260px
+			height: 362px
+			display: flex
+			align-items: center
+			justify-content: center
+			
+			img 
+				height: auto
+				width: auto
+		
+
+	.title-fruit.wrap-title,
+	.country.wrap
+		display: none
+.page-wrapper .col-lg-4
+	cursor: pointer
+.product-description
+	position: fixed
+	background: red
+	
+	height: 150px
+	width: 100%
+	height: 100%
+	display: none
+	top: 0
+	left: 0
+
+	background-color: rgba( 39, 112, 88, 0.15)
+.product-description.active 
+	
+	z-index: 999
+	display: flex
+	justify-content: center
+	align-items: center
+.single-product
+.product-description-container
+	width: 820px
+	//min-height: 645px
+	background: #fff
+	position: relative
+	padding: 60px
+	text-align: left
+	.img 
+		background: #f3f3f3
+		height: 100%
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 80px 10px
+		position: relative
+
+		.wrap-img 
+			max-height: 300px
+			min-width: 180px
+			cursor: pointer
+		.loop 
+			position: absolute
+			right: 20px
+			bottom: 25px
+			img 
+				height: 36px
+				width: 36px
+	.col-md-6 
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+
+.title-single-product
+	font-size: 30px
+	line-height: 32px
+	padding-bottom: 10px
+.product-description p 
+	font-size: 12px
+	font-family: $mont
+	// padding: 5px 0
+.single-product-item
+	.title
+		font-size: 16px
+		text-transform: uppercase
+		font-family: $mont	
+		padding: 10px 0
+	.value 
+		font-size: 12px
+		font-family: $mont
+		display: flex
+		justify-content: space-between
+		display: flex
+		.colum
+			div
+				margin: 10px 0
+	
+#custom-scroll::-webkit-scrollbar-track
+
+	
+	background-color: #d5e0db
+
+
+#custom-scroll::-webkit-scrollbar
+
+	width: 2px
+	background-color: #d5e0db
+
+
+#custom-scroll::-webkit-scrollbar-thumb
+
+	background-color: #d9e7e7
+
+.about-company 
+	position: relative
+	min-height: 1062px
+	.left-bacground
+		position:  absolute
+		width: 50%
+		min-height: 1062px
+		img 
+			width: 100%
+			min-height: 1062px
+			position: absolute
+		.overlay 
+			background: linear-gradient(to top, rgba( 26, 26, 29, 0.8), rgba( 26, 26, 29, 0.3), rgba( 26, 26, 29, 0))
+			width: 100%
+			height: 100%
+			min-height: 1062px
+			position: absolute
+			min-height: 100%
+		.line 
+			width: 80px 
+			height: 6px
+			background: #fff
+			display: block
+			color: #fff
+			position: absolute 
+			top: 880px
+			right: 0
+	h2 
+		font-size: 60px
+		margin-top: 90px
+	.col-xl-6
+		padding-left: 90px
+		.sub-title
+			font-size: 24px
+			color: $grey
+			padding: 25px 0
+		p 
+			padding: 15px 0
+			font-size: 16px
+			font-family: $mont
+			color: $grey
+			line-height: 2
+	h3 
+		font-size: 16px 
+		font-family: $mont
+		font-weight: bold
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 35px
+	.slider_box
+		margin-top: 100%
+
+	.items_slider 
+		p
+			font-size: 38px
+			color: #fff
+			line-height: 42px
+			margin-bottom: 100px
+			cursor: pointer
+			font-family: $georgR
+
+
+.arrow_slider,
+.arrow_slider2
+
+	display: flex
+	justify-content: flex-start	
+	.next,
+	.next2
+		transform: rotate(180deg)
+		position: relative
+		top: -1px
+		margin-left: 50px
+	.next2
+		height: 40px
+		width: 40px 
+		border: 1px solid #000
+		border-radius: 50%
+		opacity: 0.2
+		position: relative
+	.prev2
+		height: 40px
+		width: 40px 
+		border: 1px solid #000
+		border-radius: 50%
+		opacity: 0.2
+		position: relative
+	.prev2:hover,
+	.next2:hover 
+		opacity: 1 
+
+
+	.next:before
+		
+		content: "\f101"
+		font-family: $icon
+		color: #fff
+		opacity: 0.2
+		cursor: pointer
+	.next2:before
+		color: #000
+		content: "\f101"
+		font-family: $icon
+		cursor: pointer
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	.prev:before
+ 
+		content: "\f101"
+		font-family: $icon
+		opacity: 0.2
+		color: #fff
+		cursor: pointer
+	.prev2:before
+		color: #000
+		content: "\f101"
+		font-family: $icon
+		cursor: pointer
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+
+
+
+
+
+	.prev2:before
+		color: #000
+	.prev:hover:before,
+	.next:hover:before,
+	.prev2:hover:before,
+	.next2:hover:before, 
+		opacity: 1
+.arrow_slider2 
+	// justify-content: space-between
+	position: absolute
+	top: 50%
+	margin-top: -20px
+	width: 80%
+	display: none
+
+	
+	.prev2
+		left: -30px
+	.next2
+		right: -30px
+		position: absolute
+
+.about-section2
+	padding-top: 90px
+	.col-xl-3 
+		font-size: 24px
+		font-style: italic
+		font-family: $georgR
+		margin-bottom: 30px
+	.col-xl-9	
+	p
+		font-size: 17px
+		line-height: 2
+		color: $grey
+		margin-bottom: 50px
+		font-family: $mont
+.about-section3
+	margin-bottom: 90px
+	.col-md-5
+		background: linear-gradient(to right, #9dcab4, #d9e7e7)
+		display: flex 
+		justify-content: center
+		align-items: center
+		text-align: center
+		color: #fff
+		font-style: italic
+		font-size: 30px 
+		font-family: $georgB
+	.col-md-7
+
+		img 
+			width: 100%
+			margin-left: 20px
+		.title
+			font-size: 24px 
+			font-family: $georgB
+			padding-top: 30px
+		.about-text 
+			margin-left: 20px
+.certificate 
+	position: relative
+	.items_slider 
+		.wrap
+			display: flex 
+			justify-content: center
+		
+			align-items: center
+		img 
+			max-width: 126px
+		.name 
+			font-size: 24px
+			text-transform: uppercase
+		.title 
+			font-size: 24px
+		.date 
+			font-size: 16px
+			color: $grey
+
+.left-bacground-process 
+	min-height: 890px !important
+	img
+	
+		min-height: 890px !important
+		
+	.overlay
+		min-height: 890px !important
+		min-height: 100% !important
+	.line 
+		top: 778px !important
+
+.process-text 
+	font-size: 36px 
+	color: #fff
+	padding-top: 450px
+	line-height: 1.2
+	padding-left: 0	!important
+	max-width: 450px
+.process-left-sec
+	padding-left: 0 !important
+.about-process-text 
+	white-space: pre-wrap
+	line-height: 1.6 !important
+.about-process-section .process-mobil-block  
+	display: none
+.video-process 
+	margin-bottom: 95px
+.video-process .container .play:before
+	color: #000
+.process-section3 
+	img 
+		width: 100%
+	.sub-title 
+		font-size: 24px
+		color: $grey
+	p 
+		white-space: pre-wrap
+		font-family: $mont
+		font-size: 16px 
+		color: $grey
+	.mobil 
+		display: none
+.partners 
+	position: relative
+	min-height: 370px
+	img 
+		position: absolute
+		width: 45%
+	.container 
+		
+		
+		
+	.title 
+		font-size: 72px
+		line-height: 75px
+		padding-top: 90px
+		position: relative
+	.title:after 
+		content: ""
+		width: 100px 
+		height: 6px 
+		background: #000
+		position: absolute
+		bottom: 26px
+		right: -50px
+.our-partners 
+	margin-top: 87px
+	.container 
+		position: relative
+.slder-partners 
+	img 
+		max-height: 225px
+		max-width: 225px
+
+	.col-md-7,
+	.col-md-1,
+	.col-md-4
+		
+		display: flex
+		flex-direction: column
+		justify-content: center
+	.title 
+		font-size: 24px 
+		text-transform: uppercase
+		margin-bottom: 40px
+	p 
+		font-size: 16px 
+		font-family: $mont
+		color: $grey
+.arrow-partners
+	position: absolute
+	top: 50%
+	transform: translate(0%, -50%)
+	.next3
+		transform: rotate(180deg)
+		
+	.prev3,
+	.next3
+		height: 40px
+		width: 40px
+		border: 1px solid $grey
+		border-radius: 50%
+		position: relative
+		margin: 15px 0
+		cursor: pointer
+		background: #fff
+	.next3:before,
+	.prev3:before
+		font-family: $icon
+		content: "\f101"
+		position: absolute	
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: $grey
+	.prev3:hover.prev3:before,
+	.next3:hover.next3:before 
+		color: #000
+.logistics 
+	min-height: 503px !important
+	.title 
+		padding-top: 95px
+	.text 
+		font-size: 24px 
+		color: $grey
+		padding-top: 40px
+.logistics-table 
+	font-size: 13px	
+	font-family: $mont
+	color: $grey
+	font-weight: 500
+	.container
+		overflow-x: scroll
+		padding: 0
+		// box-size: border-box
+	tr
+		color: #000
+		text-transform: uppercase
+		font-weight: 500
+
+	thead 
+
+		th 
+			color: $grey
+			text-transform: none
+			font-weight: 500
+			text-align: center
+			// width: 150px
+			background: #f6f7f9
+			border-left: 2px solid #fff
+			border-right: 2px solid #fff 
+			padding: 28px 15px
+
+		th:nth-child(2) 
+			border-left: 1px solid #fff
+		th:last-child 
+			border-right: 2px solid #f6f7f9
+		th:first-child
+			color: #000
+			text-transform: uppercase
+			font-weight: bold
+			padding-left: 20px
+			border-right: 1px solid #f6f7f9
+			border-left: 1px solid #f6f7f9
+			border-top: 2px solid #f6f7f9
+			background: transparent
+			text-align: left !important
+
+
+	td 
+		color: $grey
+		text-align: center
+	th 
+		min-width: 161px
+		padding: 15px 0
+.table 
+	border-left: 1px solid #f6f7f9
+	//border-right: 1px solid $grey
+	margin-top: 100px
+	width: 100%
+	padding-bottom: 20px
+
+tbody 
+	border-right: 1px solid #f6f7f9
+	th 
+		padding-left: 20px !important
+		
+		border-right: 1px solid #f6f7f9
+
+#custom-table-scroll::-webkit-scrollbar-track
+
+	
+	background-color:  #f6f7f9
+	width: 40px !important
+	height: 6px !important
+	border: 1px solid #d2d2d2
+	border-left: 1px solid #d2d2d2
+	
+
+
+#custom-table-scroll::-webkit-scrollbar	
+	height: 5px
+	background-color: #d5e0db
+#custom-table-scroll::-webkit-scrollbar-thumb
+
+	background-color: #f6f7f9	
+	height: 60px !important
+	width: 40px !important
+		
+#custom-table-scroll::-webkit-resizer
+
+.recipes
+	margin-top: 65px
+	.col-md-6 
+		margin: 30px 0
+		text-align: center
+		.wrapper 
+			width: 100% 
+			display: flex
+			flex-direction: column
+			align-items: center
+			img 
+				width: 100%
+		.text-block
+			background: #fff 
+			width: 80%
+			padding: 22px 0
+			position: relative 
+			top: -40px
+		.title 
+			text-transform: uppercase
+			 
+			margin-bottom: 40px
+		.item 
+			font-family: $mont
+			display: block
+			color: #000
+.recipe-section .mobil-recipe-img
+	display: none
+
+.recipe-list
+	margin-top: 10px
+	.recipe 
+		margin-top: 90px
+	.col-md-4
+		
+		
+		font-family: $mont
+	
+		.wrapper
+			padding: 20px
+			background: #f7f8fa
+			margin-top: 60px
+		.title
+			text-transform: uppercase
+			padding-bottom: 15px
+			border-bottom: 1px solid #fff
+			margin-bottom: 10px
+		.row 
+			margin-left: 0px
+			padding-right: 20px
+			padding-top: 10px
+			display: flex 
+			justify-content: space-between
+	.col-md-8 
+		font-size: 36px
+		padding-left: 35px
+		.item 
+			font-size: 14px
+			padding: 20px 0
+			border-bottom: 1px solid #000
+
+			p 
+				margin-bottom: 0px
+			
+.single-recipe 
+	.item
+		display: flex
+		.step-num 
+			font-size: 20px
+			margin-right: 60px
+			white-space: nowrap
+.contact
+	min-height: 800px
+	.col-lg-6:nth-child(2)
+		padding-left: 50px
+	.bg-contact
+		position: absolute
+		width: 50% 
+		height: 800px
+
+		img 
+			width: 100%
+			z-index: 0
+			height: 100%
+
+		.map 
+			width: 320px 
+			height: 60px
+			background: linear-gradient(to right, #9dcab4, #d9e7e7)
+			position: absolute
+			bottom: 0
+			right: 0
+			z-index: 1
+			display: flex
+			
+			align-items: center
+			a 
+				text-transform: uppercase
+				color: #000
+				padding-left: 40px
+
+			a:after
+				content: "\f108"
+				font-weight: bold
+				font-family: $icon
+				padding-left: 40px
+.title-contact 
+	font-size: 72px
+	color: #fff
+	padding-top: 70px
+	line-height: 1.2
+	position: relative
+.title-contact:after 
+	width: 75px
+	height: 8px 
+	background: #fff
+	content: ''
+	display: block
+	right: 90px
+	position: absolute
+	bottom: 16px
+.contact .callback-popup-box
+	display: block
+	position: static
+	z-index: 0
+	margin-top: 100px
+	
+	.callback-popup 
+		height: auto
+		width: auto
+		background: transparent
+		position: static
+		transform: translate(0%)
+		padding: 0
+.contact-list .row 
+	width: 50%
+	padding-left: 70px
+	position: relative
+	margin-top: 50px
+
+	p 
+		margin-bottom: 0px
+		color: $grey
+		line-height: 2
+		width: 100%
+.contact-list  
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	justify-content: space-between
+
+.contact-list .row:first-child:before
+	font-family: $icon
+	content: "\f109"
+	position: absolute
+	left: 20px
+	font-weight: bold
+	font-size: 18px
+.contact-list .row:nth-child(2):before
+	font-family: $icon
+	content: "\f10b"
+	position: absolute
+	left: 20px
+	font-weight: bold
+	font-size: 18px
+.contact-list .row:nth-child(3):before
+	font-family: $icon
+	content: "\f10a"
+	position: absolute
+	left: 20px
+	//font-weight: bold
+	font-size: 18px
+
+
+
+
+@import "_media"
